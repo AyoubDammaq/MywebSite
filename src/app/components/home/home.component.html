@@ -1,5 +1,50 @@
-<!-- src/app/home/home.component.html -->
-<section class="text-center py-16 bg-gray-100">
-  <h1 class="text-2xl text-gray-800">Welcome to My Portfolio</h1>
-  <p class="text-4xl font-bold text-gray-600 mt-4">Hi, I'm Rushik Ghuntala 👋🏻</p>
+<section class="py-16 bg-gray-100">
+  <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 items-center">
+
+    <!-- Social Media Icons -->
+    <div class="flex flex-col items-center md:items-start gap-6">
+      <a href="https://www.linkedin.com/in/ayoub-dammak-91a87a208/"
+         class="text-4xl text-gray-600 hover:text-blue-600 transition-colors">
+        <i class="uil uil-linkedin-alt" aria-hidden="true"></i>
+        <span class="sr-only">LinkedIn</span>
+      </a>
+      <a href="https://github.com/AyoubDammaq"
+         class="text-4xl text-gray-600 hover:text-blue-600 transition-colors">
+        <i class="uil uil-github" aria-hidden="true"></i>
+        <span class="sr-only">GitHub</span>
+      </a>
+    </div>
+
+    <!-- Data Section -->
+    <div class="text-center md:text-left">
+      <h1 class="text-5xl font-bold text-gray-600 mb-2">Hi, I'm Ayoub Dammak 👋🏻</h1>
+      <h3 class="text-3xl text-gray-800 mb-4">Software Engineer</h3>
+      <p class="text-lg text-gray-700 mb-6 max-w-xl mx-auto md:mx-0">
+        High-level experience in web and mobile development, problem-solving, producing quality work.
+      </p>
+      <a href="/contact"
+         class="mt-6 inline-block bg-blue-600 text-white px-8 py-3 rounded-md hover:bg-blue-700 transition-colors">
+        Contact Me <i class="uil uil-message ml-2"></i>
+      </a>
+    </div>
+
+    <!-- Profile Image -->
+    <div class="flex justify-center md:justify-end">
+      <img
+        src="https://avatars.githubusercontent.com/u/137606998?v=4"
+        alt="Photo of Ayoub Dammak"
+        class="w-100 h-100 rounded-full border-4 border-gray-300 shadow-md"
+      />
+    </div>
+  </div>
+
+  <!-- Scroll Button -->
+  <div class="mt-12 text-center">
+    <a href="#about"
+       class="flex flex-col items-center gap-2 text-gray-600 hover:text-blue-600 transition-colors">
+      <i class="uil uil-mouse-alt text-2xl"></i>
+      <span class="text-sm uppercase">Scroll down</span>
+      <i class="uil uil-arrow-down text-xl"></i>
+    </a>
+  </div>
 </section>
