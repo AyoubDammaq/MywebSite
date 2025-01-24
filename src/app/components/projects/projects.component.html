@@ -1,18 +1,229 @@
-<!-- src/app/projects/projects.component.html -->
-<section class="py-16 bg-gray-100">
-  <h2 class="text-3xl font-bold text-gray-800 text-center">My Projects</h2>
-  <div class="mt-8 grid gap-8 grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
-      <div class="bg-white p-6 rounded-lg shadow-lg">
-          <h3 class="text-xl font-semibold text-gray-800">Project 1</h3>
-          <p class="text-gray-600 mt-2">Description of project 1.</p>
+<section id="projects" class="py-16 bg-gray-50">
+  <div class="container mx-auto">
+    <!-- Header Section -->
+    <div class="text-center mb-12">
+      <h2 class="text-4xl font-bold text-gray-800">My Projects</h2>
+      <p class="text-gray-600 mt-4">Here are some of the key projects I've worked on during my journey in software development.</p>
+    </div>
+
+    <!-- Projects Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+      <!-- Project 1 -->
+      <div class="bg-white shadow-lg rounded-lg p-6 flex flex-col justify-between h-full">
+        <div>
+          <h3 class="text-2xl font-semibold text-blue-600 mb-2">Intervention Management System</h3>
+          <p class="text-gray-700">
+            A web application developed during my internship for managing interventions and client requests for a company.
+          </p>
+          <ul class="text-sm text-gray-600 mt-3">
+            <li><strong>Tech Stack:</strong> ASP.NET, SQL Server, Tailwind CSS</li>
+            <li><strong>Role:</strong> Developed new features, optimized database queries, and integrated WhatsApp API.</li>
+          </ul>
+        </div>
+        <div class="mt-4">
+          <a href="https://github.com/username/project-link" target="_blank" class="inline-block text-white bg-blue-600 px-6 py-3 rounded-lg shadow hover:bg-blue-700 transition">View on GitHub</a>
+        </div>
       </div>
-      <div class="bg-white p-6 rounded-lg shadow-lg">
-          <h3 class="text-xl font-semibold text-gray-800">Project 2</h3>
-          <p class="text-gray-600 mt-2">Description of project 2.</p>
+
+
+      <!-- Project 2 -->
+      <div class="bg-white shadow-lg rounded-lg p-6 flex flex-col justify-between h-full">
+        <div>
+          <h3 class="text-2xl font-semibold text-blue-600 mb-2">Smart LED Controller</h3>
+          <p class="text-gray-700">
+            A mobile app that allows users to control multiple LEDs via an ESP32, developed using Flutter and Firebase.
+          </p>
+          <ul class="text-sm text-gray-600 mt-3">
+            <li><strong>Tech Stack:</strong> Flutter, Firebase, ESP32</li>
+            <li><strong>Role:</strong> Built the UI, implemented Firebase integration, and programmed the ESP32 firmware.</li>
+          </ul>
+        </div>
+        <div class="mt-4">
+          <a href="https://github.com/AyoubDammaq/ConfigLEDApp.git" target="_blank" class="inline-block text-white bg-blue-600 px-6 py-3 rounded-lg shadow hover:bg-blue-700 transition">View on GitHub</a>
+        </div>
       </div>
-      <div class="bg-white p-6 rounded-lg shadow-lg">
-          <h3 class="text-xl font-semibold text-gray-800">Project 3</h3>
-          <p class="text-gray-600 mt-2">Description of project 3.</p>
+
+      <!-- Project 3 -->
+      <div class="bg-white shadow-lg rounded-lg p-6 flex flex-col justify-between h-full">
+        <div>
+          <h3 class="text-2xl font-semibold text-blue-600 mb-2">Portfolio Website</h3>
+          <p class="text-gray-700">
+            A personal portfolio website designed to showcase my skills, projects, and resume.
+          </p>
+          <ul class="text-sm text-gray-600 mt-3">
+            <li><strong>Tech Stack:</strong> HTML, CSS, JavaScript, Tailwind CSS</li>
+            <li><strong>Role:</strong> Designed and developed the entire website from scratch.</li>
+          </ul>
+        </div>
+        <div class="mt-4">
+          <a href="https://github.com/AyoubDammaq/MywebSite.git" target="_blank" class="inline-block text-white bg-blue-600 px-6 py-3 rounded-lg shadow hover:bg-blue-700 transition">View on GitHub</a>
+        </div>
       </div>
+
+      <!-- Project 4 -->
+      <div class="bg-white shadow-lg rounded-lg p-6 flex flex-col justify-between h-full">
+        <div>
+          <h3 class="text-2xl font-semibold text-blue-600 mb-2">Event Management System</h3>
+          <p class="text-gray-700">
+            A web application for managing events, including scheduling, registration, and attendee tracking.
+          </p>
+          <ul class="text-sm text-gray-600 mt-3">
+            <li><strong>Year:</strong> 2024</li>
+            <li><strong>Tech Stack:</strong> C#, ASP.NET, SQL Server</li>
+          </ul>
+        </div>
+        <div class="mt-4">
+          <a href="https://github.com/AyoubDammaq/EventManagementSystem.git" target="_blank" class="inline-block text-white bg-blue-600 px-6 py-3 rounded-lg shadow hover:bg-blue-700 transition">View on GitHub</a>
+        </div>
+      </div>
+
+      <!-- Project 5 -->
+      <div class="bg-white shadow-lg rounded-lg p-6 flex flex-col justify-between h-full">
+        <div>
+          <h3 class="text-2xl font-semibold text-blue-600 mb-2">Modeling Pulse Shapes in Fiber Lasers</h3>
+          <p class="text-gray-700">
+            Developed a neural network model to predict pulse shapes in fiber lasers for an academic project.
+          </p>
+          <ul class="text-sm text-gray-600 mt-3">
+            <li><strong>Year:</strong> 2023</li>
+            <li><strong>Tech Stack:</strong> Python, Jupyter, Keras, Pandas</li>
+          </ul>
+        </div>
+        <div class="mt-4">
+          <a href="https://github.com/AyoubDammaq/GeneralPredictiveModel_ANN.git" target="_blank" class="inline-block text-white bg-blue-600 px-6 py-3 rounded-lg shadow hover:bg-blue-700 transition">View on GitHub</a>
+        </div>
+      </div>
+
+      <!-- Project 6 -->
+      <div class="bg-white shadow-lg rounded-lg p-6 flex flex-col justify-between h-full">
+        <div>
+          <h3 class="text-2xl font-semibold text-blue-600 mb-2">To Do List Application</h3>
+          <p class="text-gray-700">
+            A multi-user mobile application for task management, allowing users to create and organize tasks.
+          </p>
+          <ul class="text-sm text-gray-600 mt-3">
+            <li><strong>Year:</strong> 2023</li>
+            <li><strong>Tech Stack:</strong> Flutter, Firebase, Android Studio</li>
+          </ul>
+        </div>
+        <div class="mt-4">
+          <a href="https://github.com/AyoubDammaq/ToDoApp-Firebase.git" target="_blank" class="inline-block text-white bg-blue-600 px-6 py-3 rounded-lg shadow hover:bg-blue-700 transition">View on GitHub</a>
+        </div>
+      </div>
+
+      <!-- Project 7 -->
+      <div class="bg-white shadow-lg rounded-lg p-6 flex flex-col justify-between h-full">
+        <div>
+          <h3 class="text-2xl font-semibold text-blue-600 mb-2">Project Management System</h3>
+          <p class="text-gray-700">
+            A web application for managing and displaying project details efficiently.
+          </p>
+          <ul class="text-sm text-gray-600 mt-3">
+            <li><strong>Year:</strong> 2023</li>
+            <li><strong>Tech Stack:</strong> Java, Eclipse IDE, Wildfly</li>
+          </ul>
+        </div>
+        <div class="mt-4">
+          <a href="https://github.com/AyoubDammaq/ProjectManager_J2EE.git" target="_blank" class="inline-block text-white bg-blue-600 px-6 py-3 rounded-lg shadow hover:bg-blue-700 transition">View on GitHub</a>
+        </div>
+      </div>
+
+      <!-- Project 8 -->
+      <div class="bg-white shadow-lg rounded-lg p-6 flex flex-col justify-between h-full">
+        <div>
+          <h3 class="text-2xl font-semibold text-blue-600 mb-2">Quote Dictionary</h3>
+          <p class="text-gray-700">
+            A web application to manage and categorize quotes with a user-friendly interface.
+          </p>
+          <ul class="text-sm text-gray-600 mt-3">
+            <li><strong>Year:</strong> 2022</li>
+            <li><strong>Tech Stack:</strong> Symfony, PHP</li>
+          </ul>
+        </div>
+        <div class="mt-4">
+          <a href="https://github.com/AyoubDammaq/DictionnaireDeCitation_Symfony.git" target="_blank" class="inline-block text-white bg-blue-600 px-6 py-3 rounded-lg shadow hover:bg-blue-700 transition">View on GitHub</a>
+        </div>
+      </div>
+
+      <!-- Project 9 -->
+      <div class="bg-white shadow-lg rounded-lg p-6 flex flex-col justify-between h-full">
+        <div>
+          <h3 class="text-2xl font-semibold text-blue-600 mb-2">E-commerce Application</h3>
+          <p class="text-gray-700">
+            An online platform for selling products with features like product listings, user authentication, and checkout.
+          </p>
+          <ul class="text-sm text-gray-600 mt-3">
+            <li><strong>Year:</strong> 2022</li>
+            <li><strong>Tech Stack:</strong> React, Node.js</li>
+          </ul>
+        </div>
+        <div class="mt-4">
+          <a href="https://github.com/AyoubDammaq/CarPartsStore.git" target="_blank" class="inline-block text-white bg-blue-600 px-6 py-3 rounded-lg shadow hover:bg-blue-700 transition">View on GitHub</a>
+        </div>
+      </div>
+
+      <!-- Project 10 -->
+      <div class="bg-white shadow-lg rounded-lg p-6 flex flex-col justify-between h-full">
+        <div>
+          <h3 class="text-2xl font-semibold text-blue-600 mb-2">Parking Reservation App</h3>
+          <p class="text-gray-700">
+            A mobile application for reserving parking spots, featuring user authentication, spot availability tracking, and payment integration.
+          </p>
+          <ul class="text-sm text-gray-600 mt-3">
+            <li><strong>Year:</strong> 2024</li>
+            <li><strong>Tech Stack:</strong> Flutter, Firebase</li>
+          </ul>
+        </div>
+        <div class="mt-4">
+          <a href="https://github.com/AyoubDammaq/ParkingReservationApp.git" target="_blank" class="inline-block text-white bg-blue-600 px-6 py-3 rounded-lg shadow hover:bg-blue-700 transition">View on GitHub</a>
+        </div>
+      </div>
+
+      <!-- Project 11 -->
+      <div class="bg-white shadow-lg rounded-lg p-6 flex flex-col justify-between h-full">
+        <h3 class="text-2xl font-semibold text-blue-600 mb-2">Plant Disease Prediction App</h3>
+        <p class="text-gray-700">
+          A web app using TensorFlow Lite and Flask to predict plant diseases based on uploaded images.
+        </p>
+        <ul class="text-sm text-gray-600 mt-3">
+          <li><strong>Technologies:</strong> Python, Flask, TensorFlow Lite</li>
+          <li><strong>Features:</strong> Image upload, preview, and real-time prediction</li>
+        </ul>
+        <div class="mt-4">
+          <a href="https://github.com/AyoubDammaq/PlantDiseasePredictorApp.git" target="_blank" class="inline-block text-white bg-blue-600 px-6 py-3 rounded-lg shadow hover:bg-blue-700 transition">View on GitHub</a>
+        </div>
+      </div>
+
+      <!-- Project 12 -->
+      <div class="bg-white shadow-lg rounded-lg p-6">
+        <h3 class="text-2xl font-semibold text-green-600 mb-2">Plant Disease Classification using MobileNetV2</h3>
+        <p class="text-gray-700">
+          A project using MobileNetV2 to classify plant diseases, built with TensorFlow and optimized for mobile devices.
+        </p>
+        <ul class="text-sm text-gray-600 mt-3">
+          <li><strong>Technologies:</strong> Python, TensorFlow, MobileNetV2</li>
+          <li><strong>Features:</strong> Dataset preprocessing, fine-tuning, and mobile optimization</li>
+        </ul>
+        <div class="mt-4">
+          <a href="https://github.com/AyoubDammaq/PlantDiseasesIdentifier.git" target="_blank" class="inline-block text-white bg-blue-600 px-6 py-3 rounded-lg shadow hover:bg-blue-700 transition">View on GitHub</a>
+        </div>
+      </div>
+
+      <!-- Project 13 -->
+      <div class="bg-white shadow-lg rounded-lg p-6">
+        <h3 class="text-2xl font-semibold text-blue-600 mb-2">E-commerce with Dapr</h3>
+        <p class="text-gray-700">
+          A scalable microservices architecture for an e-commerce platform, utilizing Dapr for efficient communication between services.
+        </p>
+        <ul class="text-sm text-gray-600 mt-3">
+          <li><strong>Technologies:</strong> .NET, Dapr, PostgreSQL</li>
+          <li><strong>Features:</strong> Product management, user authentication, order processing</li>
+        </ul>
+        <div class="mt-4">
+          <a href="https://github.com/AyoubDammaq/ecommerceDapr.git" target="_blank" class="inline-block text-white bg-blue-600 px-6 py-3 rounded-lg shadow hover:bg-blue-700 transition">View on GitHub</a>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
