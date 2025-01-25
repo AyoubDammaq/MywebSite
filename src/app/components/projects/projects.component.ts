@@ -6,7 +6,6 @@ import { Title } from '@angular/platform-browser';
   templateUrl: './projects.component.html',
   styleUrl: './projects.component.css'
 })
-
 export class ProjectsComponent {
 
   constructor(private titleService: Title){
