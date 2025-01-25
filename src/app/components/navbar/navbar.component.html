@@ -1,74 +1,53 @@
-<nav class="bg-white border-gray-200 dark:bg-gray-900 w-full sticky top-0 z-50 shadow-md">
+<nav class="bg-white border-gray-200 dark:bg-gray-900 w-full sticky top-0 z-50 shadow-md transition-shadow duration-300">
   <div class="flex flex-wrap items-center justify-between w-full p-4">
-    <div class="text-2xl font-bold text-blue-600 dark:text-blue-400 tracking-wide">
-      <a
-        href="#home"
-        class="text-2xl font-bold text-blue-600 dark:text-blue-400 tracking-wide relative group"
-      >
+    <div class="text-2xl font-bold text-blue-600 dark:text-blue-400 tracking-wide group transition duration-300 transform hover:scale-110">
+      <a href="#home" class="relative">
         <span>AYOUB</span>
-        <span
-          class="absolute left-0 bottom-0 w-0 h-1 bg-blue-600 transition-all duration-300 group-hover:w-full dark:bg-blue-400"
-        ></span>
+        <span class="absolute left-0 bottom-0 w-0 h-1 bg-blue-600 transition-all duration-300 group-hover:w-full dark:bg-blue-400"></span>
       </a>
     </div>
-    <button
-      data-collapse-toggle="navbar-default"
-      type="button"
-      class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
-      aria-controls="navbar-default"
-      aria-expanded="false"
-      aria-label="Toggle navigation menu"
-    >
+
+    <!-- Hamburger Button for Mobile -->
+    <button id="menu-toggle" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600">
       <span class="sr-only">Open main menu</span>
-      <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+      <svg id="hamburger" class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
         <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
       </svg>
+      <svg id="close" class="w-5 h-5 hidden" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1l15 15M1 16L16 1"/>
+      </svg>
     </button>
-    <div
-      class="hidden w-full md:block md:w-auto"
-      id="navbar-default"
-    >
-      <ul
-        class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700"
-      >
-        <li>
-          <a
-            href="#home"
-            class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500"
-            aria-current="page"
-          >
+
+    <!-- Navbar Links -->
+    <div id="navbar-default" class="hidden md:block md:w-auto">
+      <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+
+        <li class="group relative">
+          <a href="#home" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">
             Home
           </a>
         </li>
-        <li>
-          <a
-            href="#about"
-            class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
-          >
+
+        <li class="group relative">
+          <a href="#about" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">
             About
           </a>
         </li>
-        <li>
-          <a
-            href="#resume"
-            class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
-          >
+
+        <li class="group relative">
+          <a href="#resume" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">
             Resume
           </a>
         </li>
-        <li>
-          <a
-            href="#projects"
-            class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
-          >
+
+        <li class="group relative">
+          <a href="#projects" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">
             Projects
           </a>
         </li>
-        <li>
-          <a
-            href="#contact"
-            class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
-          >
+
+        <li class="group relative">
+          <a href="#contact" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">
             Contact
           </a>
         </li>
@@ -76,3 +55,58 @@
     </div>
   </div>
 </nav>
+
+<!-- Add JavaScript for smooth scroll and active link highlighting -->
+<script>
+  // Smooth Scroll
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+      e.preventDefault();
+      document.querySelector(this.getAttribute('href')).scrollIntoView({
+        behavior: 'smooth'
+      });
+    });
+  });
+
+  // Active Link Highlighting
+  const sections = document.querySelectorAll('section');
+  const navLinks = document.querySelectorAll('nav a');
+
+  window.addEventListener('scroll', () => {
+    let current = '';
+    sections.forEach(section => {
+      const sectionTop = section.offsetTop;
+      if (scrollY >= sectionTop - 60) {
+        current = section.getAttribute('id');
+      }
+    });
+    navLinks.forEach(link => {
+      link.classList.remove('text-blue-700', 'bg-blue-700');
+      if (link.getAttribute('href').includes(current)) {
+        link.classList.add('text-white', 'bg-blue-700');
+      }
+    });
+  });
+
+  // Toggle Navbar Menu for Mobile
+  const menuToggle = document.getElementById('menu-toggle');
+  const hamburger = document.getElementById('hamburger');
+  const close = document.getElementById('close');
+  const navbar = document.getElementById('navbar-default');
+
+  menuToggle.addEventListener('click', function() {
+    navbar.classList.toggle('hidden');
+    hamburger.classList.toggle('hidden');
+    close.classList.toggle('hidden');
+  });
+
+  // Add Shadow on Scroll
+  window.addEventListener('scroll', function() {
+    const navbar = document.querySelector('nav');
+    if (window.scrollY > 0) {
+      navbar.classList.add('shadow-lg');
+    } else {
+      navbar.classList.remove('shadow-lg');
+    }
+  });
+</script>
